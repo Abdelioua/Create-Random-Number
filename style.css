@@ -1,0 +1,42 @@
+.serial {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  padding: 20px;
+  background-color: #eee;
+  margin: 40px auto 0;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  height: 66.5px;
+}
+.generate {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  user-select: none;
+}
+.generate:hover {
+  background-color: #f0440e;
+}
+.serial::after {
+  content: "COPY";
+  position: absolute;
+  right: -50px;
+  font-size: 14px;
+  color: white;
+  background-color: #ff5722;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
